@@ -28,4 +28,11 @@ function getProdutos() {
   return Object.values(produtos);
 }
 
-module.exports = { salvarProduto, getProduto, getProdutos };
+// Excluindo um produto a partir de sua ID
+function excluirProduto(id) {
+  const produto = produtos[id];
+  delete produtos[id];
+  return produto;
+}
+
+module.exports = { salvarProduto, getProduto, getProdutos, excluirProduto };
