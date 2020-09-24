@@ -1,3 +1,5 @@
+// recurso novo
+
 // percorre a partir das letras/valores
 for (let letra of 'Cod3r') {
   console.log(letra);
