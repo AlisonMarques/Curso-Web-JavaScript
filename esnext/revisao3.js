@@ -8,22 +8,22 @@ console.log(Object.entries(obj));
 
 // Melhorias na notação literal
 // novo jeito de criar função dentro de um objeto
-const nome = 'Alison';
+const nome = "Alison";
 const pessoa = {
-  nome,
-  ola() {
-    return 'Opa!';
-  },
+    nome,
+    ola() {
+        return "Opa!";
+    },
 };
-console.log(pessoa.nome + ',' + pessoa.ola());
+console.log(pessoa.nome + "," + pessoa.ola());
 
 // Class
 
 class Animal {}
 class Cachorro extends Animal {
-  falar() {
-    return 'Au Au!';
-  }
+    falar() {
+        return "Au Au!";
+    }
 }
 
 console.log(new Cachorro().falar());

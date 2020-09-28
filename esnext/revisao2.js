@@ -15,18 +15,18 @@ lexico1();
 lexico2();
 
 // Parametro default / Parametro Padrão
-function log(texto = 'Node') {
-  console.log(texto);
+function log(texto = "Node") {
+    console.log(texto);
 }
 
 log();
-log('Sou mais forte');
+log("Sou mais forte");
 
 // operador rest (...)
 function total(...numeros) {
-  let total = 0;
-  numeros.forEach((n) => (total += n));
-  return total;
+    let total = 0;
+    numeros.forEach((n) => (total += n));
+    return total;
 }
 
 console.log(total(5, 10, 25, 40));
