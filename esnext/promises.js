@@ -13,16 +13,16 @@
 // exemplo 1
 
 function falarDepoisDe(segundos, frase) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      // o resolve só aceita apenas um parametro
-      resolve(frase);
-    }, segundos * 1000);
-  });
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // o resolve só aceita apenas um parametro
+            resolve(frase);
+        }, segundos * 1000);
+    });
 }
 
-falarDepoisDe(3, 'Que legal!')
-  .then((frase) => frase.concat('?!?'))
-  .then((outraFrase) => console.log(outraFrase))
-  //tratar erro em uma promise
-  .catch((e) => console.log(e));
+falarDepoisDe(3, "Que legal!")
+    .then((frase) => frase.concat("?!?"))
+    .then((outraFrase) => console.log(outraFrase))
+    //tratar erro em uma promise
+    .catch((e) => console.log(e));
