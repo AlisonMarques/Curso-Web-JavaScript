@@ -9,7 +9,7 @@
  * se chama (resolve)
  *
  */
-let p = new Promise(function (resolve) {
+let p = new Promise((resolve) => {
     /**
      * para chamar dois parâmetros, é necessário criar um objeto
      * ou um array dentro da função
