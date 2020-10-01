@@ -17,6 +17,7 @@ exibirConteudo(caminho).then((conteudo) => console.log(conteudo));
 // quebrando o arquivo em linhas
 exibirConteudo(caminho)
     .then((conteudo) => conteudo.split('\n'))
+    // escolhendo a linha que quer apresentar
     .then((linhas) => console.log(linhas[1]));
 
 // usando a função Join para separar por vírgula

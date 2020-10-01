@@ -12,15 +12,15 @@
 //     }, 2000);
 // }, 2000);
 
-function esperarPor(tempo = 2000) {
+function esperarPor(tempo) {
     return new Promise(function (resolve) {
         setTimeout(function () {
-            console.log("Executando Promise...");
-            resolve("testeeeeeeeeeeeeee");
+            console.log('Executando Promise...');
+            resolve('testeeeeeeeeeeeeee');
         }, tempo);
     });
 }
 
-esperarPor()
+esperarPor(2000)
     .then(() => esperarPor())
     .then(esperarPor);

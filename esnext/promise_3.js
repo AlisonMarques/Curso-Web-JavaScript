@@ -9,8 +9,11 @@ function gerarNumeroEntre(min, max) {
         const fator = max - min + 1;
         const aleatorio = parseInt(Math.random() * fator) + min;
         resolve(aleatorio);
+        console.log(aleatorio);
     });
 }
+
+// o resultado do resolve para o (.then)
 
 gerarNumeroEntre(1, 60)
     .then((num) => num * 10)
