@@ -15,12 +15,12 @@ lexico1();
 lexico2();
 
 // Parametro default / Parametro Padrão
-function log(texto = "Node") {
+function log(texto = 'Node') {
     console.log(texto);
 }
 
 log();
-log("Sou mais forte");
+log('Sou mais forte');
 
 // operador rest (...)
 function total(...numeros) {
